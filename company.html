@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+    <meta name="google-site-verification" content="ASyrUwlj0UOH320uAaM02sNJuzMvH2NW4gGWZKF4WJ8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JYP Entertainment</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/jype.css">
+	<link rel="stylesheet" href="css/sub.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.mousewheel.min.js"></script>
+	<script src="js/jype.js"></script>
+	<script src="js/sub.js"></script>
+	<script>
+      function initMap() {
+        var myLatlng = {lat: 37.525544, lng: 127.050618};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: myLatlng
+        });
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3HLliPcUg2GpmNlGc9NDVI9j8_moa9I&callback=initMap">
+    </script>
+</head>
+<body>
+    <!-- header -->
+	<header>
+        <h1><a href="index.html"><img src="img/main/logo.png" alt="JYP Entertainment"></a></h1>
+		<nav>
+			<h2 class="blind">navigation</h2>
+			<button type="button">
+			    <span></span>
+			    <span></span>
+			    <span>MENU</span>
+			</button>
+			<div>
+			    <div class="navMenu">
+			        <p>LEADER IN<br> ENTERTAINMENT</p>
+			        <ul class="left">
+                        <li><a href="company.html">01<span>COMPANY</span></a></li>
+			            <li><a href="artist.html">02<span>ARTIST</span></a></li>
+                        <li><a href="gallery.html">03<span>GALLERY</span></a></li>
+                        <li><a href="notice.html">04<span>NOTICE</span></a></li>
+			        </ul>
+			        <ul class="right">
+			            <li><span></span></li>
+			            <li><span></span></li>
+			            <li><span></span></li>
+			            <li><span></span></li>
+			        </ul>
+			        <div>
+			            <a href="#"><img src="img/main/sns01.png" alt="facebook"></a>
+			            <a href="#"><img src="img/main/sns02.png" alt="twitter"></a>
+			            <a href="#"><img src="img/main/sns03.png" alt="youtube"></a>
+			        </div>
+			    </div>
+			</div>
+		</nav>
+	</header>
+	<!-- /header -->
+	<!-- .main -->
+	<div class="main">
+	    <main>
+            <!-- left box-->
+            <div class="leftBox">
+                <div class="up one"></div>
+            </div>
+            <!-- /left box-->
+            <!-- imgbox -->
+            <div class="middleBox">
+                <section>
+                       <h3>COMPANY</h3>
+                       <p>1997.05~</p>
+                       <img src="img/sub/company/company.png" alt="gray buildings">
+                </section>
+            </div>
+            <!-- /imgbox -->
+            <!-- about -->
+            <div class="company">
+            	<section>
+            	    <h4>ABOUT JYP</h4>
+            	    <p>K텔레콤, NHN, Daum, NC소프트, 삼성전자 등 대기업들과의 업무 제휴 경험을 바탕으로 ㈜ JYP만의 남다른 노하우와 함께 세계 엔터테인먼트 산업을 선도해 나가고 있으며, 한국의 ㈜ JYP 본사를 비롯한 <span>JYP China(Beijing), JYP Japan(Tokyo)의</span> 글로벌 네트워크를 통해 엔터테인먼트 컨텐츠 제작 및 판매에 새로운 패러다임을 제시하며 엔터테인먼트 산업의 귀감이 되고 있습니다.</p>
+            	    <p>또한 아시아 최고의 프로듀서인 <span>박진영</span>을 중심으로 <span>원더걸스, 2PM, 2AM, 트와이스 등</span> 모두가 사랑하는 최고의 아티스트를 발굴 및 배출 하였으며, 시대를 앞서가는 음악과 아티스트 발굴을 위해 노력하고 엔터테인먼트 산업을 선도하는 업계의 리더로 자리매김하고 있습니다.</p>
+            	</section>
+            	<!-- /about -->
+            	<!-- contact -->
+            	<section>
+            	    <h4>CONTACT US</h4>
+            	    <div id="map"></div>
+            	    <ul>
+                        <li>JYP Center</li>
+                        <li><address>서울특별시 강남구 압구정로 79길 41</address></li>
+                        <li><a href="tel:02-3438-2300">02-3438-2300</a></li>
+                        <li><a href="mailto:ad@jype.com">ad@jype.com</a></li>
+            	    </ul>
+            	</section>
+            </div>
+            <!-- /contact -->
+            <!-- right box -->
+	        <div class="rightBox">
+                <p>K-POP</p>
+	            <div>
+	                <a href="#">FACEBOOK</a>
+	                <a href="#">TWITTER</a>
+	                <a href="#">YOUTUBE</a>
+	            </div>
+	        </div>
+            <!-- /right box -->
+	    </main>
+	</div>
+	<!-- /.main -->
+	<!-- footer -->
+	<footer class="cp">
+	    <small>2019 COPYRIGHT ⓒ JYP CORP.<br>ALL RIGHT RESERVED.</small>
+	</footer>
+	<!-- /footer -->
+</body>
+</html>

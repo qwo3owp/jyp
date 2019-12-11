@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+header > a{position: fixed; top: 86px; right: 70.937%; color: #636363; font-size: 1.5rem; font-weight: 800; z-index: 10;}
+header > a > img{width: 7px; margin-right: 5px;}
+
+header.on h1{height: 70px;}
+header.on h1 img{display: none;}
+header.on > a{top: 33px;}
+/* artist */
+.artist{padding-top: 122px;}
+.artist div{width: 98px;}
+.artist div img{width: 20px;}
+
+/* albumBox */
+.albumBox > p{display: none;}
+.albumBox{width: 88.437%; margin: 39px auto 18px;}
+.albumBox > div{width: 46.643%; float: left;}
+.albumBox > div:nth-child(even){margin-right: 6.714%;}
+.albumBox > div img{width: 100%;}
+.albumBox > div > p{padding: 20px 0; color: #615e5e; font-size: 1.8rem; font-weight: 800; text-align: center;}
+.albumBox > div > p > span{display: block; padding-top: 8px; color: #949494; font-size: 1.4rem; font-weight: 700;}
+.albumBox:after{display: block; content: ""; clear: both;}
+
+/* hover */
+.albumBox div:hover div, .albumBox div:hover div p{transition: .3s;}
+.albumBox div div{position: relative;}
+.albumBox div div p{width: 100%; height: 100%; padding: 0 10%; position: absolute; top: 0; color: #ffc881; font-weight: 800; font-size: 1.9rem; line-height: 2.8rem; text-align: center; opacity: 0;}
+.albumBox div:hover div p{padding-top: 32.51%;background: rgba(0,0,0,.77); opacity: 1;}
+.albumBox > div:hover > p{color: #3b9be0; transition: .3s;}
+
+@media screen and (min-width: 406px){
+    
+    .albumBox div:hover div p{padding-top: 43.12%;}
+}
+
+/* mobile 가로 */
+@media screen and (max-width: 767px) and (orientation: landscape){
+    
+    body{height: 1500px;}
+    
+    header > a{padding-top: 52px; top: 7.5%; right: 77.5%;}
+    header.on h1 img{display: block;}
+    header.on > a{top: 7.5%;}
+    
+    /* artist */
+    .artist{margin-top: -30px; padding-top: 0; position: fixed; top: 50%; left: 5.208%;}
+    
+    /* reset */
+    .albumBox > div:nth-child(even){margin: 0 11px;}
+    
+    /* albumBox */
+    .albumBox{width: 1500px; margin: -73px 0 0 33.75%; position: fixed; top: 50%;}
+    .albumBox > p{display: block; margin: 0 11px 14px; color: #6b6b6b; font-size: 1.3rem; font-weight: 800;}
+    .albumBox > p > img{width: 9px; margin-left: 5px;}
+    .albumBox > div{width: 128px; margin: 0 11px; position: relative;}
+    .albumBox > div > p{padding: 10px 0;}
+    .albumBox > div > p > span{display: none;}    
+}
+
+/* gte 768 */
+@media screen and (min-width: 768px){
+
+    header > a{font-size: 2rem; right: 76.562%; top: 196px;}
+    header > a > img{width: 11px; margin-right: 8px; vertical-align: -2px;}
+    header.on h1{height: 80px;}
+    header.on > a{top: 32px;}
+
+    /* artist */
+    .artist{padding-top: 268px;}
+    .artist div{width: 149px;}
+    .artist div img{width: 35px;}
+
+    /* albumBox */
+    .albumBox{width: 83.333%; max-width: 690px; margin-top: 65px;}
+    .albumBox > div{width: 46.875%;}
+    .albumBox > div:nth-child(even){margin-right: 6.25%;}
+    .albumBox > div > p{padding: 28px 0; font-size: 2.4rem;}
+    .albumBox > div > p > span{padding-top: 10px; font-size: 2rem;}
+    
+    /* hover */
+
+    .albumBox div div p{font-size: 2.8rem; line-height: 3rem;}
+    .albumBox div:hover div p{padding-top: 46%;}
+}
+
+/* gte 1024 */
+@media screen and (min-width: 1024px) and (orientation: landscape){
+    
+    body{height: 3470px;}
+    
+    header > a{padding-top: 94px; top: 9.635%; right: 80.566%; font-size: 2rem;}
+    header.on h1 img{display: block;}
+    header.on > a{top: 9.635%;}
+    
+    /* artist */
+    .artist{margin-top: -67px; padding: 0;}
+    
+    /* album */
+    .albumBox > div:nth-child(even){margin-right: 27px;}
+    .albumBox{width: 3470px; max-width: none; margin: -160px 0 0 31.542%; position: fixed; top: 50%;}
+    .albumBox > p{display: block; margin: 0 27px 37px; color: #6b6b6b; font-size: 2rem; font-weight: 800;}
+    .albumBox > p > img{width: 16px; margin-left: 9px;}
+    .albumBox > div{width: 292px; margin: 0 27px; position: relative;}
+    .albumBox > div > p{padding: 31px 0;}
+    .albumBox > div > p > span{display: block;} 
+}
+
+@media screen and (min-width: 1280px){
+    
+    body{height: 3740px;}
+    
+    header > a{padding-top: 110px; top: 10.266%; right: 80.989%;}
+    header.on > a{top: 10.266%;}
+    
+    /* album */
+    .albumBox{width: 3940px; margin-top: -200px; margin-left: 29.375%;}
+    .albumBox > div{width: 340px;}    
+}
